@@ -1,0 +1,379 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-weight:100;
+    font-size: 27px;
+    margin: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 16px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.main-header-container {
+    background: #eaeaea;
+}
+
+.main-header,
+.intro,
+.intro-content,
+.columns,
+.slogan, 
+.legal,
+.content-header,
+.content,
+.gallery {
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.main-header .logo {
+    float: left;
+}
+
+.main-header nav {
+    float: right;
+    padding-top: 37px;
+}
+
+.main-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header li {
+    float: left;
+}
+
+.main-header nav a {
+    display: block;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight:100;
+    color: #222;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;  
+}
+
+.main-header nav a:hover,
+.main-header nav .current a {
+    border-color: darkred;
+}
+
+nav a:hover, 
+nav a:focus, 
+nav a:active {
+   color: rgb(242, 162, 162);
+   /* background-color: #fcdffc; */
+   }
+
+.main-header nav a {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;  
+}
+
+.intro-container {
+    background: transparent url(../Bilder/FabLab Kamp-Lintfort.jpg) bottom center no-repeat;
+    height: 500px;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 50px;
+    text-transform: uppercase
+}
+
+.intro h1 span {
+    display: block;
+    font-size: 20px;
+}
+
+.intro-content-container {
+    background: #eaeaea;
+    padding: 40px 0
+}
+
+.intro-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.intro-text,
+.intro-aside {
+    float: left;
+    padding: 0 20px
+}
+
+.intro-text {
+    width:  66.66%;
+}
+
+.intro-text p{
+    margin-top: 0
+}
+
+.intro-aside {
+    width: 33.33%;
+    border-left: 1px solid #c6c6c6;
+}
+
+.intro-aside h3,
+.intro-aside p {
+    margin: 0;
+}
+
+.columns-container {
+    background: #d8d8d8;
+    padding: 40px 0;
+}
+
+.columns {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.columns article {
+    float: left;
+    width: 33.33%;
+    padding: 0 20px;
+    text-align: center;
+    border-left: 1px solid #b5b5b5;
+}
+
+.columns article:first-child {
+    border: none
+}
+
+.columns article .button {
+    display: block;
+}
+
+.slogan-container {
+    background: #eaeaea;
+}
+
+.slogan p {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.slogan p span {
+    display: block;
+    font-weight: 950;
+}
+
+.legal-container {
+    background: #2e2e2e;
+    color: #eaeaea;
+}
+
+.legal-container a {
+    color: #b5b5b5;
+    font-weight: 700;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+}
+
+.legal-container a:hover {
+    border-color: #b5b5b5;
+     -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; 
+}
+
+/* Wochen */
+
+.content-container section {
+    text-align: center;
+}
+
+/* Weekly Projects */
+
+.main-content-container {
+}
+
+.main-content-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-header-container {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.gallery-container {
+    background: #eaeaea;
+}
+
+.gallery article {
+    width: 50%;
+    float: left;
+}
+
+.gallery article a {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+
+.gallery article a:hover .overlay {
+    /*display: block;*/
+    opacity: 1;
+}
+
+.gallery article .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,.65);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 120px;
+    /*display: none;*/ 
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.gallery article img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #222;
+     -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; 
+}
+
+.button:hover {
+    background: rgb(242, 162, 162);
+    color: darkred;
+}
+
+.btn-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-light:hover {
+    background: rgb(242, 162, 162);
+    color: darkred;
+    border: darkred;
+}
+
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both
+}
+
+/* Mediaqueries */
+
+@media screen and (max-width: 850px){
+    .main-header .logo,
+    .main-header nav,
+    .main-header li {
+        float: none;
+    }
+    
+    .main-header nav {
+        padding-top: 10px;
+    }
+    
+    .main-header {
+        text-align: center;
+    }
+    
+    .main-header li {
+        display: inline-block;
+    }
+    
+    .intro-text,
+    .intro-aside {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .intro-container {
+        height: 200px;
+    }
+    
+    .intro {
+        padding-top: 20px;
+    }
+    
+    .intro h1 {
+        font-size: 30px;
+    }
+    
+    .intro h1 span {
+        font-size: 16px;
+    }
+    
+    .columns article {
+        width: 100%;
+        border: none;
+        border-top: 1px solid #b5b5b5;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    
+    .columns article:first-child {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .gallery article {
+        width: 100%;
+    }
+}
