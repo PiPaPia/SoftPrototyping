@@ -241,6 +241,15 @@ nav a:active {
     transition: all .5s ease;  
 }
 
+.how-to-content-container {
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 0;
+    text-align: center;
+    display: block;
+    background: #eaeaea;
+}
+
 /* Downloads */
 
 .Downloads-text {
