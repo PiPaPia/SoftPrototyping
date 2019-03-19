@@ -29,7 +29,7 @@
         <div class="main-content-container">
          <div class="content-header-container">
             <header class="content-header">
-            <h1>Week9</h1>
+            <h1>Week 9</h1>
             </header>
          </div><!-- content-header -->
             
@@ -117,11 +117,101 @@
                 <img src="Bilder/Final_Prototype2.JPG" width="100%">
                 <img src="Bilder/Final_Prototype3.JPG" width="100%">
                 <p>Well, when I arrived at the programming, I connected all the cables to their designated places. With an example code given by Arduino, I made the light strip glow. Here I was right before the next problem. Because in my final product, the light stripe should show a dynamic flashing. Say each individual LED must be addressed one after the other, so that a smooth transition can occur. But in my case, all the LEDs were addressed simultaneously.</p>
+                <h4>So I had to rethink and find another new way.</h4>
+                <p>The new idea was to work with optical fibers. These should be illuminated by a light source on one side and then guide this light to the other end.</p>
+                <p>First of all, the whole thing will be tested with normal LEDs. We programmed these so that they had a fading effect.In order for this to work, a resistor has been added to limit the current.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OEH_T_8WE_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>To connect the optical fibers to the LEDs, I take the LED and grind it up with sand paper to a smooth surface. Then I carefully drill a small hole in the LED so that the optical fiber fits perfectly into it.</p>
+                <img src="Bilder/FinalProject1.JPG" width="100%" >
+                <img src="Bilder/FinalProject2.JPG" width="100%">
+                <p>When I plugged the optical fibers into the LED, I had to prove that the LED is a far too weak light source. The light is barely not guided and is therefore useless for me.</p>
+                <img src="Bilder/FinalProject3.JPG" width="100%">
+                <p>In the next step, I tried another LED, which has a slightly higher voltage. This led the light much better through my optical fibers, but still too small for me.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yLHyKGJ-nl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>So I continued to try different things and found out that the LED, which is in the initially intended light strip, seems to be the best light source.I tested it all with a ring from NeoPixel, because this ring has no waterproof coating. Unlike the initially used light strip I thought that this coating could possibly dim the light a bit.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EmMir5a2vgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>These NeoPixels are very small, so I had to think carefully about the circuit.
+                At first I tried embroidering it all. For this I created a circuit in Illustrator.
+                For the circuit, I took an extra piece of fabric, as I did not want to risk breaking the whole sleeve. This time, the fabric was placed down so that the circuit appears on the right side. And then let it embroider. </p>
+                <img src="Bilder/FinalProject5.JPG" width="100%">
+                <p></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0t_V-TPXXPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Here I had to realize again that this will not be possible, because the circuit is so small, the whole lines are too close together and it is almost impossible to separate them.</p>
+               <img src="Bilder/FinalProject6.JPG" width="100%">
+               <p>So I decided to sew the circuit by hand. This initially turned out to be a very good idea. No path is touching now and the circuit is working.</p>
+                <img src="Bilder/FinalProject7.JPG" width="100%">
+                <img src="Bilder/FinalProject8.JPG" width="100%">
+                <p>In the next step I wanted to solder the NeoPixel to my circuit. The connections of the NeoPixel itself are very small, which is why you had to work very minimalistically. You also had to be very careful that you do not destroy the fabric with the high heat.</p>
+                <img src="Bilder/FinalProject10.JPG" width="100%">
+                <p>This again was not the right way and did not work as I had imagined. So at first I tried not to make any loops on the NeoPixels, which I can finally sew into the right place in the circuit. But since the neoPixel connections are so small, they broke off quickly due to the high heat, so loops were not an option for me either.</p>
+                <img src="Bilder/FinalProject11.JPG" width="100%">
+                <img src="Bilder/FinalProject12.JPG" width="100%">
+                <p>So I'm trying this again in a different way. Instead of fabric, I have now taken hard white plastic. On this plastic, I rebuilt the circuit with copper tape and soldered in the next step, the NeoPixel on it. You also have to be very careful, because the high heat can quickly melt the plastic and so the whole circuit can be destroyed quickly.</p>
+                <img src="Bilder/FinalProject13.JPG" width="100%">
+                <img src="Bilder/FinalProject14.JPG" width="100%">
+                <p>This worked great with the first LED. But as soon as the second LED was soldered, nothing worked. Even after a long search, I could not figure out where the mistake lay.</p>
+                <img src="Bilder/FinalProkect15.JPG" width="100%">
+                <h4>So it said again: plan change</h4>
+                <p>From the small NeoPixel I switched to something bigger, which can be connected much easier, since with these no curves are necessary, but only straight lines. The connections with these NeoPixels are much easier. In the end you only need three cables for all four. All connected first, the connections were tested with the multimeter to directly rule out that anything went wrong.</p>
+                <img src="Bilder/FinalProject16.JPG" width="100%">
+                <p>After the connections have already been tested with the multimeter, I connected the LEDs to the Arduino to see if they really light up. And finally, your first real success was visible, because all NeoPixel light up.</p>
+                <img src="Bilder/FinalProject17.JPG" width="100%">
+                <h4>In the next step, the sensor could now be built.</h4>
+                <p>I decided for a bend sensor, which should bring the NeoPixel only in the stretched state to light up.
+                I easily built the sensor myself. All you need is two pieces of plastic sticking to one side, black tape and two strips of copper tape.
+                The first piece of plastic is placed with the adhesive side up and then, in turn, with the adhesive side up, the copper tape positioned. Next is a piece of the black tapes, with which the copper tape should be completely covered. Then the second piece of copper tape comes on it, but this time with the adhesive side down. And last but not least, the second piece of plastic comes on it, but also with the adhesive side down.</p>
+                <p>It is important that on each side of a small piece of copper tape from the plastic looks out, so that you can connect in the end with the rest.</p>
+                <p>Then everything is connected again by alligator clips and connected to the Arduino to test whether it works.In order for it to do that, of course, the sensor must first be included in the code in advance.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S6KvvQ-l0VQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>To find out when the sensor does something, take the serial monitor again. It shows you which values you have to specify in your code.
+                The serial monitor can be found in the upper right corner of your Arduino software.</p>
+                <img src="Bilder/PressureSensor6.jpg" width="100%">
+                <p>In the next step I had to think about how I would connect everything up the sleeve and finally used a solderable breadboard. On this I have the possibility to easily connect and solder everything with each other. But before it went to solder, I had to cut the board first in as small pieces as possible.</p>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/qoNyBNbfGG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="Bilder/FinalProject18.JPG" width="100%">
+                <img src="Bilder/FinalProkect19.JPG" width="100%">
+                <p>Next I extended the cable of the battery, because I wanted to hide it in an inside pocket in the jacket and the current cables were clearly too short.
+                When extending the cables, however, you had to be very careful, as you could easily have caused a short circuit and destroyed the battery.</p>
+                <img src="Bilder/FinalProject20.JPG" width="100%">
+                <p>At the end all connections were tested again and I checked, if I could achieve the hoped-for result.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CjogyUJrd-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>All that's missing now is that the optical fibers and the NeoPixels are connected to each other.
+                For this I tried different glue, but superglue or the like did not dry. So I decided on a rather uglier version and glued everything together with the hot glue gun.</p>
+                <img src="Bilder/FinalProject23.JPG" width="100%">
+                <p>
+                Since the glow of the optical fibers in the bright not so good to gelun, I test the whole again to darker conditions. Just in the circumstances in which it should be used later.</p>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/BbRO1_m9VEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>When all the technology finally worked, I thought about my sleeve.</h4>
+                <p>For this I first created a pattern on paper, so as not to unnecessarily waste material, if in the end something did not fit or maybe even should look different. In the sleeve I integrated some loops, through which the optical fibers should run.</p>
+                <img src="Bilder/FinalProject21.JPG" width="100%">
+                <p>Satisfied with the template, I was finally able to cut the sleeve in the Laser Cutter. Not only did I cut the sleeve 2 times, but 4 times, so that I could hide the optical fibers and the electronics perfectly in between.
+                Of course I could have cut the sleeves out by hand, but with the laser cutter I had the certainty that they will be 100% the same size and will fit perfectly together. I threaded the optical fibers directly to see what the whole thing would look like with fabric.</p>
+                <img src="Bilder/FinalProject22.JPG" width="100%">
+                <p>Finally, I sewed everything together and sewed my sleeves to an existing vest. In addition, I have on the inside of the vest two inside pockets in which the batteries can be hidden.</p>
+                <img src="Bilder/FinalProcet24.jpg" width="100%">
               </section>
                   </section>
              </div>
                      </div>
                      
+                     <div class="main-content-container">
+         <div class="content-header-container">
+            <header class="content-header">
+            <h1>Final Pruduct</h1>
+            </header>
+         </div><!-- content-header -->
+                         
+                          <div id="intro-content-container" class="intro-content-container">
+          <section class="intro-content clearfix">
+            <section class="how-to-text">
+                 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/pnIDV--iKxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+              </section>
+                              </section>
+                         </div>
+                     </div>
+        
+        
+                                        
                      <div class="main-content-container">
          <div class="content-header-container">
             <header class="content-header">
@@ -151,7 +241,10 @@
             
             </div>
          </div>
+     </div>
     </body>
 </html>
 
     
+
+
